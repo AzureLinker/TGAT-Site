@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+    <html lang="ru">
+        <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="img/pressKit/Logo/TGASLogoV1.png" type="image/x-icon">
+    <title>Настройки | TGAT</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+        <link rel="stylesheet" href="./files/css/swiper-bundle.min.css">
+    <body>
+        <header>
+    <nav>
+        <div class="menu-logo">
+            <i class='bx bx-menu menu-icon'></i>
+            <span class="menu-name">TGAT</span>
+        </div>
+
+        <div class="sidebar">
+            <div class="menu-logo">
+                <i class='bx bx-menu menu-icon'></i>
+                <span class="menu-name">TGAT</span>
+            </div>
+            <div class="sidebar-content">
+                <ul class="menuLists">
+                    <li class="menuList">
+                        <a href="./home.html" class="nav-link">
+                            <i class="bx bxs-home icon"></i>
+                            <span class="menuLink">Главная</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./gameLibrary.html" class="nav-link">
+                            <i class="bx bx-play icon"></i>
+                            <span class="menuLink">Игры</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./gameTools.html" class="nav-link">
+                            <i class="bx bxs-wrench icon"></i>
+                            <span class="menuLink">Инструменты</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./history.html" class="nav-link">
+                            <i class="bx bx-history icon"></i>
+                            <span class="menuLink">История</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./documentation.html" class="nav-link">
+                            <i class="bx bxs-file-doc icon"></i>
+                            <span class="menuLink">Документация</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./faq.html" class="nav-link">
+                            <i class="bx bx-question-mark icon"></i>
+                            <span class="menuLink">FAQ</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./news.html" class="nav-link">
+                            <i class="bx bxs-news icon"></i>
+                            <span class="menuLink">Новости</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="bottom-content">
+                    <li class="menuList">
+                        <a href="#" class="nav-link">
+                            <i class="bx bxs-user-circle icon"></i>
+                            <span class="menuLink">Аккаунт</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./settings.html" class="nav-link">
+                            <i class="bx bxs-cog icon"></i>
+                            <span class="menuLink">Настройки</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./index.html" class="nav-link">
+                            <i class="bx bxs-log-out icon"></i>
+                            <span class="menuLink">Выйти</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./files/documentation/changelog.txt" class="nav-link">
+                            <span class="menuLink">0.0.7-design</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="overlay"></section>
+    <script>
+        const navBar = document.querySelector("nav"),
+              menuBtns = document.querySelectorAll(".menu-icon"),
+              overlay = document.querySelector(".overlay");
+
+        menuBtns.forEach(menuBtn => {
+            menuBtn.addEventListener("click", () => {
+                navBar.classList.toggle("open")
+            })
+        });
+        overlay.addEventListener("click", () => {
+            navBar.classList.remove("open");
+        })
+    </script>
+</header>
+        <main>
+    <div class="containerHome">
+        <div class="homeBlock">
+            <div class="blockName" data-text="Основная Информация"></div>
+            <div class="blockContent">
+                <div class="input_settings">
+                    <input type="text" placeholder="Логин">
+                </div>
+                <div class="input_settings">
+                    <input type="password" placeholder="Старый Пароль">
+                </div>
+                <div class="input_settings">
+                    <input type="password" placeholder="Новый Пароль">
+                </div>
+                <div class="input_settings">
+                    <input type="password" placeholder="Повтор Пароля">
+                </div>
+            </div>
+        </div>
+        <div class="homeBlock">
+            <div class="blockName" data-text="Дополнительные Настройки"></div>
+            <div class="blockContent">
+                <div class="select_settings">
+                    <div class="select-btn">
+                        <span class="sBtn_text">Выберите свой язык</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+                    <ul class="options">
+                        <li class="option"><span class="option-text" data-language="ru_ru">Русский</span></li>
+                        <li class="option"><span class="option-text" data-language="en_us">English</span></li>
+                        <li class="option"><span class="option-text" data-language="uk_ua">Українська</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="homeBlock">
+            <div class="blockName" data-text=""></div>
+            <div class="blockContent blockButtons">
+                <div class="form-content flex-form">
+                    <div class="field button-field settingsBtn">
+                        <input type="submit" id="loginButton" value="Применить"/>
+                    </div>
+                    <div class="field cancelButton settingsBtn">
+                        <input type="submit" id="loginButton" value="Отменить"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+        <footer>
+    <div class="content">
+        <div class="top">
+            <div class="logo-details">
+                <picture><source srcset="img/pressKit/Logo/TGASLogoV1.webp" type="image/webp"><img src="img/pressKit/Logo/TGASLogoV1.png" width="32" alt=""></picture>
+                <span class="logo_name">AzureLink</span>
+            </div>
+            <div class="media-icons">
+                <a href="#"><i class='bx bxl-youtube ' ></i></a>
+                <a href="https://github.com/AzureLinker/TGAT-Site/tree/Diplom"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-discord-alt ' ></i></a>
+                <a href="#"><i class='bx bx-globe ' ></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+        <script src="./files/js/settings.js"></script>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+    <html lang="ru">
+        <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="img/pressKit/Logo/TGASLogoV1.png" type="image/x-icon">
+    <title>FAQ | TGAT</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+        <link rel="stylesheet" href="./files/css/swiper-bundle.min.css">
+    <body style="overflow: hidden;">
+        <header>
+    <nav>
+        <div class="menu-logo">
+            <i class='bx bx-menu menu-icon'></i>
+            <span class="menu-name">TGAT</span>
+        </div>
+
+        <div class="sidebar">
+            <div class="menu-logo">
+                <i class='bx bx-menu menu-icon'></i>
+                <span class="menu-name">TGAT</span>
+            </div>
+            <div class="sidebar-content">
+                <ul class="menuLists">
+                    <li class="menuList">
+                        <a href="./home.html" class="nav-link">
+                            <i class="bx bxs-home icon"></i>
+                            <span class="menuLink">Главная</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./gameLibrary.html" class="nav-link">
+                            <i class="bx bx-play icon"></i>
+                            <span class="menuLink">Игры</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./gameTools.html" class="nav-link">
+                            <i class="bx bxs-wrench icon"></i>
+                            <span class="menuLink">Инструменты</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./history.html" class="nav-link">
+                            <i class="bx bx-history icon"></i>
+                            <span class="menuLink">История</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./documentation.html" class="nav-link">
+                            <i class="bx bxs-file-doc icon"></i>
+                            <span class="menuLink">Документация</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./faq.html" class="nav-link">
+                            <i class="bx bx-question-mark icon"></i>
+                            <span class="menuLink">FAQ</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./news.html" class="nav-link">
+                            <i class="bx bxs-news icon"></i>
+                            <span class="menuLink">Новости</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="bottom-content">
+                    <li class="menuList">
+                        <a href="#" class="nav-link">
+                            <i class="bx bxs-user-circle icon"></i>
+                            <span class="menuLink">Аккаунт</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./settings.html" class="nav-link">
+                            <i class="bx bxs-cog icon"></i>
+                            <span class="menuLink">Настройки</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./index.html" class="nav-link">
+                            <i class="bx bxs-log-out icon"></i>
+                            <span class="menuLink">Выйти</span>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a href="./files/documentation/changelog.txt" class="nav-link">
+                            <span class="menuLink">0.0.7-design</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="overlay"></section>
+    <script>
+        const navBar = document.querySelector("nav"),
+              menuBtns = document.querySelectorAll(".menu-icon"),
+              overlay = document.querySelector(".overlay");
+
+        menuBtns.forEach(menuBtn => {
+            menuBtn.addEventListener("click", () => {
+                navBar.classList.toggle("open")
+            })
+        });
+        overlay.addEventListener("click", () => {
+            navBar.classList.remove("open");
+        })
+    </script>
+</header>
+        <main>
+    <div class="containerFAQ">
+        <div class="accordion">
+            <div class="image-box">
+                <picture><source srcset="img/wallpapers/question_mark.webp129.webp" type="image/webp"><img src="img/wallpapers/question_mark_PNG129.png" alt=""></picture>
+            </div>
+            <div class="accordion-text">
+                <div class="title">FAQ</div>
+                <ul class="faq-text">
+                    <li>
+                        <div class="question-arrow">
+                            <span class="question">Что такое TGAT?</span>
+                            <i class='bx bxs-chevron-right arrow'></i>
+                        </div>
+                        <p class="faq-answer">Это - инструмент для удобного ведения настольных игр как в онлайн, так и офлайн формате.</p>
+                        <span class="line"></span>
+                    </li>
+                    <li>
+                        <div class="question-arrow">
+                            <span class="question">Как играть?</span>
+                            <i class='bx bxs-chevron-right arrow'></i>
+                        </div>
+                        <p class="faq-answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis obcaecati aliquid? Dicta, recusandae. Excepturi mollitia quasi quo doloribus dolorum harum ullam enim eveniet libero deleniti recusandae iure, architecto atque maxime hic consectetur saepe corporis a optio quisquam nobis ab laboriosam esse. Laudantium, unde qui!</p>
+                        <span class="line"></span>
+                    </li>
+                    <li>
+                        <div class="question-arrow">
+                            <span class="question">Для чего нужны куки?</span>
+                            <i class='bx bxs-chevron-right arrow'></i>
+                        </div>
+                        <p class="faq-answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis obcaecati aliquid? Dicta, recusandae. Excepturi mollitia quasi quo doloribus dolorum harum ullam enim eveniet libero deleniti recusandae iure, architecto atque maxime hic consectetur saepe corporis a optio quisquam nobis ab laboriosam esse. Laudantium, unde qui!</p>
+                        <span class="line"></span>
+                    </li>
+                    <li>
+                        <div class="question-arrow">
+                            <span class="question">Как работает "Менеджер Раундов"?</span>
+                            <i class='bx bxs-chevron-right arrow'></i>
+                        </div>
+                        <p class="faq-answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis obcaecati aliquid? Dicta, recusandae. Excepturi mollitia quasi quo doloribus dolorum harum ullam enim eveniet libero deleniti recusandae iure, architecto atque maxime hic consectetur saepe corporis a optio quisquam nobis ab laboriosam esse. Laudantium, unde qui!</p>
+                        <span class="line"></span>
+                    </li>
+                    <li>
+                        <div class="question-arrow">
+                            <span class="question">Это бесплатно?</span>
+                            <i class='bx bxs-chevron-right arrow'></i>
+                        </div>
+                        <p class="faq-answer">Да, это бесплатно!</p>
+                        <span class="line"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        let li = document.querySelectorAll(".faq-text li");
+        for(var i = 0; i < li.length;i++){
+            li[i].addEventListener("click", (e)=> {
+                let clickedLi;
+                if(e.target.classList.contains("question-arrow") || e.target.classList.contains("faq-answer")){
+                    clickedLi = e.target.parentElement;
+                } else{
+                    clickedLi = e.target.parentElement.parentElement;
+                }
+                clickedLi.classList.toggle("showAnswer");
+            });
+        }
+    </script>
+</main>
+        <footer>
+    <div class="content">
+        <div class="top">
+            <div class="logo-details">
+                <picture><source srcset="img/pressKit/Logo/TGASLogoV1.webp" type="image/webp"><img src="img/pressKit/Logo/TGASLogoV1.png" width="32" alt=""></picture>
+                <span class="logo_name">AzureLink</span>
+            </div>
+            <div class="media-icons">
+                <a href="#"><i class='bx bxl-youtube ' ></i></a>
+                <a href="https://github.com/AzureLinker/TGAT-Site/tree/Diplom"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-discord-alt ' ></i></a>
+                <a href="#"><i class='bx bx-globe ' ></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>
