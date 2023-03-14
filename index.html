@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html lang="ru">
+        <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="img/pressKit/Logo/TGASLogoV1.png" type="image/x-icon">
+    <title>Авторизация</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+    <body style="overflow: hidden;">
+        <main>
+    <section class="containerIndex forms">
+        <div class="form loginForm">
+            <div class="form-content">
+                <header>Авторизация</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="text" placeholder="Логин" class="inputBox lLogin">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Пароль" class="inputBox lPassword">
+                        <i class="bx bx-hide eye-icon"></i>
+                    </div>
+                    <div class="form-link">
+                        <a href="#" class="forgot-password">Забыли пароль?</a>
+                    </div>
+                    <div class="field button-field">
+                        <input type="submit" id="loginButton" value="Войти"/>
+                    </div>
+                    <div class="form-link">
+                        <span>Ещё нет аккаунта? <a href="#" class="link signup-link">Зарегистрируйтесь</a></span>
+                    </div>
+                    <div class="form-link">
+                        <a href="./home.html" class="forgot-password">Войти просто так.</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="form signup">
+            <div class="form-content">
+                <header>Регистрация</header>
+                <form action="#">
+                    <div class="login-field">
+                        <div class="field input-field">
+                            <input type="text" placeholder="Логин" class="inputBox login">
+                        </div>
+                        <span class="error login-error">
+                            <i class='bx bx-error-circle error-icon' ></i>
+                            <p class="error-text">Логин может состоять только из латинских букв, цифр, тире, и нижних подчёркиваний. Не менее двух символов.</p>
+                        </span>
+                    </div>
+                    <div class="email-field">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Почта" class="inputBox email">
+                        </div>
+                        <span class="error email-error">
+                            <i class='bx bx-error-circle error-icon' ></i>
+                            <p class="error-text">Пожалуйста, введите правильную электронную почту.</p>
+                        </span>
+                    </div>
+                    <div class="password-field">
+                        <div class="field input-field ">
+                            <input type="password" placeholder="Пароль" class="inputBox password">
+                            <i class="bx bx-hide eye-icon"></i>
+                        </div>
+                        <span class="error password-error">
+                            <i class='bx bx-error-circle error-icon' ></i>
+                            <p class="error-text">Пожалуйста, введите пароль не менее 8 символов, только латинскими буквами. Нужно использовать цифры, символы (@$!%*?&), большие и маленькие буквы.</p>
+                        </span>
+                    </div>
+                    <div class="cPassword-field">
+                        <div class="field input-field ">
+                            <input type="password" placeholder="Повтор Пароля" class="inputBox cPassword">
+                            <i class="bx bx-hide eye-icon"></i>
+                        </div>
+                        <span class="error cPassword-error">
+                            <i class='bx bx-error-circle error-icon' ></i>
+                            <p class="error-text">Пароли не совпадают.</p>
+                        </span>
+                    </div>
+                    <div class="form-checkBox form-link">
+                        <input type="checkbox" id="ruleAcceptCheck" onclick="enableForm()">
+                        <label for="ruleAcceptCheck">Согласие с <a href="./files/documentation/terms-of-service.txt">Пользовательским соглашением</a> и <a href="./files/documentation/privacy-policy.txt">Политикой конфиденциальности</a></label>
+                    </div>
+                    <div class="field button-field">
+                        <input type="submit" id="registerButton" value="Зарегистрироваться" disabled/>
+                    </div>
+                    <div class="link form-link">
+                        <span>Уже есть аккаунт? <a href="#" class="login-link">Войдите</a></span>
+                    </div>
+                    <div class="form-link">
+                        <a href="./home.html" class="forgot-password">Войти просто так.</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+        <script src="./files/js/indexForms.js"></script>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>
